@@ -1,6 +1,10 @@
 import { useQuery } from "@apollo/client";
 import type { NextPage } from "next";
+
+// 自分が書いたquery
 import { MY_QUERY } from "../queries/posts";
+
+// 自動生成されたquery
 import { MyQueryQuery } from "../generated/graphql";
 
 const Home: NextPage = () => {
