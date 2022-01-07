@@ -11,6 +11,8 @@ const Home: NextPage = () => {
   const { data, error } = useQuery<MyQueryQuery>(MY_QUERY);
   return (
     <div>
+      <h1>HasuraNext</h1>
+      データベースから取得する
       {data?.posts.map((post) => (
         <div key={`post-${post.id}`}>
           {post.id} {post.title}
